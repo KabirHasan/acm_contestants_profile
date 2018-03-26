@@ -1,0 +1,108 @@
+.c{
+    color:chocolate;
+    font-family: cursive;
+    font-size: 25;
+}
+.c1{
+    color:chocolate;
+    margin: 0 0 0 30px;
+    font-family: cursive;
+    font-size: 25;
+}
+a{
+    text-decoration: none;
+}
+.page{
+    margin: 100px 0 0 150px;
+    color: cadetblue;
+    font-family: cursive;
+}
+#coach{
+    font-family: cursive;
+}
+#contestant{
+    font-family: cursive;
+}
+#team{
+    font-family: cursive;
+}
+#logIn{
+    margin: 150px 350px 0 300px;
+    background-color: burlywood;
+    font-family: cursive;
+    
+}
+#fff{
+    margin: 150px 0 0 150px;
+}
+.admin{
+    margin: 150px 350px 0 300px;
+    background-color: red;
+    font-family: cursive;
+    color: white;
+}
+#a{
+    font-size: 30;
+    font-family: cursive;
+    color: rebeccapurple;
+    margin: 50px 0 0 150px;
+}
+#c{
+    font-size: 50;
+    font-family: monospace;
+    color: cadetblue;
+}
+#of{
+    color: black;
+}
+#uiu{
+   font-family: cursive;
+    font-size: 35;
+    color:yellow;
+}
+
+#des{
+    width: 100%;
+    
+}
+#bottom{
+    height: 500px;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+#line{
+    color: black;
+    height: 10px;
+    background-color: darkcyan;
+  
+}
+#line2{
+    color: black;
+    height: 10px;
+    background-color: darkcyan;
+    
+}
+#qq{
+    padding: 400px 0 0 0;
+}
+#u{
+    background-color: black;
+    color: white;
+}
+#q{
+    margin: 0 0 0 500px;
+}
+#dest{
+    margin: 0 0 0 150px;
+}
+#img{
+  margin: 0 0 0 150px;
+}
+#bac{
+    background-color: blueviolet;
+}
+#bottom{
+    background-color: black;
+    color: white;
+    width: 100%;
+}

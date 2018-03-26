@@ -1,0 +1,64 @@
+CREATE TABLE contestants(
+    id char(9),
+    name varchar(25),
+    dept char(3),
+    email varchar(35),
+    phone_no char(14),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE faculties(
+    id char(9),
+    name varchar(25),
+    dept char(3),
+    email varchar(35),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE teams(
+    team_id char(3),
+    name varchar(25),
+    id char(9),
+    PRIMARY KEY(team_id),
+    FOREIGN KEY(id) REFERENCES faculties(id)
+);
+
+CREATE TABLE contacts(
+    phone_no char(14),
+    id char(9),
+    PRIMARY KEY(phone_no,id),
+    FOREIGN KEY(id) REFERENCES faculties(id)
+);
+CREATE TABLE team_contestants(
+    id char(9),
+    team_id char(3),
+    PRIMARY KEY(id),
+    FOREIGN KEY(id) REFERENCES contestants(id),
+    FOREIGN KEY(team_id) REFERENCES teams(team_id)
+);
+
+CREATE TABLE contests(
+    contest_id char(5),
+    title varchar(25),
+    datee char(8),
+    PRIMARY KEY(contest_id)
+);
+
+CREATE TABLE participation(
+    team_id char(3),
+    contest_id char(5),
+    rank int,
+    PRIMARY KEY(team_id, contest_id),
+    FOREIGN KEY(team_id) REFERENCES teams(team_id),
+    FOREIGN KEY(contest_id) REFERENCES contests(contest_id)
+);
+
+CREATE TABLE budgets(
+    budget_id char(5),
+    title varchar(35),
+    amount numeric(9,2),
+    datee char(8),
+    contest_id char(5),
+    PRIMARY KEY(budget_id),
+    FOREIGN KEY(contest_id) REFERENCES contests(contest_id)
+);

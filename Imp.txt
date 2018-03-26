@@ -1,0 +1,2 @@
+SELECT faculties.name, teams.name
+FROM faculties,teams WHERE faculties.id = teams.id
